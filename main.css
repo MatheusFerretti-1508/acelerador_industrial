@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color:#ebebeb ; /*Definindo fundo da página*/
+}
+
+.header-container {
+    padding: 32px 0 32px 0; 
+    background-color: #350a72;
+}
+header {
+    max-width: 900px; /*Definindo tamanho máximo da header*/
+    margin: 0 auto; /*Centralizando a header no container dela*/
+    color: #fff;
+}
+.menu-superior {
+    display: flex;
+    flex-direction: row-reverse; /*Colocando a imagem na esquerda*/
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+.menu-superior img {
+    height: 100px;
+    width: 100px;
+}
+.menu-superior h1 {
+    margin-left: 12px;
+}
+.menu-dropdown {
+    padding: 48px;
+    background-color:#672abb ;
+    color: #fff;
+}
+.menu-dropdown__menu {
+
+}
+.menu-dropdown__menu__listagem {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.menu-dropdown__menu__listagem__item {
+    padding: 8px;
+    margin: 0 32px;
+    transition: transform .5s; /*Definindo animação de zoom*/
+    font-size: 18px;
+}
+.menu-dropdown__menu__listagem__item:hover {
+    transform: scale(1.2); /*Definindo o tamanho do zoom da animação*/
+    cursor: pointer;
+}
+
+
+.container-imagem-topo img {
+    max-width: 100%;
+    width: 100%;
+    height: 600px;
+}
+
+
+.container-content {
+    margin: 0 auto;
+    max-width: 900px;
+    margin-top: 64px;
+}
+.container-chamativo {
+    transition: .9s;
+}
+.container-chamativo h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -80px;
+}
+.container-chamativo img {
+    display: flex;
+    margin: 0 auto;
+    width: 450px;
+    height: 500px;
+}
+
+section {
+    margin-bottom: 72px;
+}
+
+.container-sobre {
+    transition: .9s;
+}
+.container-sobre__titulo {
+    display: flex;
+}
+.container-sobre img {
+    height: 80px;
+    margin-top: 8px;
+}
+.container-sobre p {
+    line-height: 24px;
+}
+.container-sobre__texto {
+    display: block;
+    margin-left: 80px;
+    margin-top: -32px;
+    text-align: justify;
+}
+.container-sobre__imagem {
+    display: flex;
+    justify-content: center;
+}
+.container-sobre__imagem img {
+    height: 400px;
+    margin: 0 auto;
+}
+
+.container-como-te-ajudamos {
+    transition: .9s;
+}
+.container-como-te-ajudamos__titulo {
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+}
+.container-como-te-ajudamos img {
+    height: 80px;
+    margin-top: 8px;
+}
+.container-como-te-ajudamos p {
+    line-height: 24px;
+}
+.container-como-te-ajudamos__texto {
+    display: block;
+    margin-right: 80px;
+    margin-top: -32px;
+    text-align: justify;
+}
+
+#nossos-clientes {
+    margin-top: 64px;
+}
+.container-nossos-clientes {
+    transform: .9s;
+}
+.container-nossos-clientes__titulo {
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid #000;
+}
+.container-nossos-clientes__listagem {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-nossos-clientes__listagem__item img {
+    height: 200px;
+    padding: 16px;
+}
+#logo-audi {
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 100%;
+    }
+    .header-container {
+        max-width: 100%;
+        width: 100%;
+    }
+    header {
+        color: #fff;
+    }
+    .menu-superior {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+    }
+    .menu-superior img {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 10px;
+        height: 85px;
+        width: 85px;
+    }
+    .menu-superior h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        margin: 0 auto;
+    }
+    .menu-dropdown {
+        padding: 24px;
+        background-color:#672abb ;
+        color: #fff;
+    }
+    .menu-dropdown__menu {
+    
+    }
+    .menu-dropdown__menu__listagem {
+        display: flex;
+        margin: 0 auto;
+        list-style: none;
+        justify-content: center;
+    }
+    .menu-dropdown__menu__listagem__item {
+        padding: 8px;
+        margin: 0 5px;
+        white-space: nowrap;
+        transition: transform .5s; /*Definindo animação de zoom*/
+        font-size: 12px;
+    }
+    .menu-dropdown__menu__listagem__item:hover {
+        transform: scale(1.2); /*Definindo o tamanho do zoom da animação*/
+        cursor: pointer;
+    }
+
+
+    .container-imagem-topo img {
+        max-width: 100%;
+        width: 100%;
+        height: 600px;
+    }
+
+
+    .container-content {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 64px;
+    }
+    .container-chamativo {
+        transition: .9s;
+    }
+    .container-chamativo h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -40px;
+        font-size: 18px;
+    }
+    .container-chamativo img {
+        display: flex;
+        margin: 0 auto;
+        width: 250px;
+        height: 300px;
+    }
+
+    .container-sobre {
+        transition: .9s;
+        max-width: 90%;
+    }
+    .container-sobre__titulo {
+        display: flex;
+    }
+    .container-sobre__titulo h2 {
+        font-size: 18px;
+    }
+    .container-sobre img {
+        height: 45px;
+        margin-top: 8px;
+    }
+    .container-sobre p {
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .container-sobre__texto {
+        display: block;
+        margin-left: 40px;
+        margin-top: -23px;
+        text-align: justify;
+    }
+    .container-sobre__imagem {
+        display: flex;
+        justify-content: center;
+    }
+    .container-sobre__imagem img {
+        height: 300px;
+        margin: 0 auto;
+    }
+    
+    .container-como-te-ajudamos {
+        transition: .9s;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .container-como-te-ajudamos__titulo {
+        display: flex;
+        justify-content: end;
+        flex-direction: row-reverse;
+    }
+    .container-como-te-ajudamos__titulo h2 {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .container-como-te-ajudamos img {
+        height: 45px;
+        margin-top: 8px;
+    }
+    .container-como-te-ajudamos p {
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .container-como-te-ajudamos__texto {
+        display: block;
+        margin-right: 40px;
+        margin-top: -23px;
+        text-align: justify;
+    }
+
+    #nossos-clientes {
+        margin-top: 64px;
+    }
+    .container-nossos-clientes {
+        transform: .9s;
+        max-width: 90%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container-nossos-clientes__titulo {
+        display: flex;
+        justify-content: center;
+        border-bottom: 4px solid #000;
+    }
+    .container-nossos-clientes__titulo h2 {
+        font-size: 18px;
+    }
+    .container-nossos-clientes__listagem {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .container-nossos-clientes__listagem__item img {
+        height: 90px;
+        padding: 8px;
+    }
+    #logo-audi {
+        height: 50px;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+
+
